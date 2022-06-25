@@ -1,0 +1,15 @@
+.ResultCard {
+    background-color: #0d69fc;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 15px;
+}
+
+.resultText {
+  color: white;  
+}
+
