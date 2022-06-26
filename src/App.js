@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ml5 from "ml5";
 import useInterval from "@use-it/interval";
 import Message from "./message";
+import logo from "./Salus.png";
 
 import Chart from "./Result";
 
@@ -48,17 +49,22 @@ function App() {
   return (
     <div>
       <div className="capture">
+        <div className="logoBox">
+          <img src={logo} height="125" width="125" className="Salus" />
+          <div>
+            {result.length > 0 && (
+              <div>
+                <Chart data={result[0]} />
+              </div>
+            )}
+          </div>
+        </div>
         <video
           ref={videoRef}
           style={{ transform: "scale(-1, 1)" }}
           width="1000"
           height="700"
         />
-        {result.length > 0 && (
-          <div>
-            <Chart data={result[0]} />
-          </div>
-        )}
       </div>
     </div>
   );

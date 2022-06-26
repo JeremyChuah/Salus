@@ -9,3 +9,16 @@
 body{
   background-color: #adcaf7;
 }
+
+.logoBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.Salus{
+  
+   margin-right: 20rem;
+}

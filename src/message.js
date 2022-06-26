@@ -31,7 +31,7 @@ class message extends Component {
             this.setState({ text: { ...text, recipient: e.target.value } })
           }
         />
-        {this.props.isSend && this.sendText("hello")}
+        {this.props.isSend && this.sendText(this.props.crisis)}
       </div>
     );
   }
